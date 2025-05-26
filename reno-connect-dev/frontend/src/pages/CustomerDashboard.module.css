@@ -1,0 +1,151 @@
+.dashboard {
+  max-width: 950px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(44,62,80,0.09);
+  padding: 32px 24px 40px 24px;
+}
+.header {
+  margin-bottom: 24px;
+}
+.header h1 {
+  font-size: 2rem;
+  color: #2d3e50;
+  margin-bottom: 4px;
+}
+.email {
+  color: #888;
+  font-size: 1.05rem;
+}
+.tabs {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+.tabs button {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3e50;
+  padding: 8px 24px;
+  border-radius: 20px 20px 0 0;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.tabs .active, .tabs button.active {
+  background: #ffd166;
+  color: #2d3e50;
+}
+.tabContent {
+  min-height: 220px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 18px;
+}
+.table th, .table td {
+  padding: 10px 8px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+.table th {
+  color: #2d3e50;
+  font-weight: 700;
+  background: #f7f8fa;
+}
+.statusUpcoming {
+  color: #f7b267;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.statusCompleted {
+  color: #4caf50;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.cancelBtn, .reviewBtn, .submitBtn {
+  background: #2d3e50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-right: 4px;
+}
+.cancelBtn:hover, .reviewBtn:hover, .submitBtn:hover {
+  background: #ffd166;
+  color: #2d3e50;
+}
+.reviewed {
+  color: #4caf50;
+  font-weight: 600;
+}
+.reviewForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
+}
+.reviewForm textarea {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  resize: vertical;
+}
+.empty {
+  color: #888;
+  text-align: center;
+  margin: 32px 0;
+  font-size: 1.1rem;
+}
+.reviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.reviewCard {
+  background: #f7f8fa;
+  border-radius: 12px;
+  padding: 18px 18px 12px 18px;
+  box-shadow: 0 1px 6px rgba(44,62,80,0.06);
+}
+.reviewProvider {
+  font-weight: 700;
+  color: #2d3e50;
+  margin-bottom: 4px;
+}
+.reviewStars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 4px;
+}
+.reviewDate {
+  color: #888;
+  font-size: 0.98rem;
+  margin-left: 8px;
+}
+.reviewText {
+  color: #444;
+  font-size: 1.05rem;
+}
+@media (max-width: 700px) {
+  .dashboard {
+    padding: 12px 2px 24px 2px;
+  }
+  .table th, .table td {
+    padding: 7px 2px;
+    font-size: 0.98rem;
+  }
+} 
